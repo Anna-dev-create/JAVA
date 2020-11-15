@@ -17,8 +17,6 @@ class Calculator {
             int str = sc.nextInt();
             System.out.println("您的选择是" + str);
             int i = str;
-            System.out.println("您现在应输入的格式为：数值+符号+数值");
-            try{throw new MyExcption("格式不正确");
                 switch (i) {
                     case 1:
                         System.out.println("您选择了整数运算");
@@ -32,28 +30,31 @@ class Calculator {
                                 "5.除法且第二个数据为被除数");
                         int q = sc.nextInt();
                         System.out.println("您的选择是" + q);
-                        String a = sc.next();
-                        System.out.println("您输入的计算式为：" + a);
                         int w = q;
                         switch (w) {
                             case 1:
                                 System.out.println("您选择进行加法运算");
                                 System.out.println("运算结果为" + (m + n));
+                                break;
                             case 2:
                                 System.out.println("您选择进行减法运算");
                                 System.out.println("运算结果为" + (m - n));
+                                break;
                             case 3:
                                 System.out.println("您选择进行乘法运算");
                                 System.out.println("运算结果为" + (m * n));
+                                break;
                             case 4:
                                 System.out.println("您选择进行除法运算且m为被除数");
                                 System.out.println("运算结果为" + (m / n));
+                                break;
                             case 5:
                                 System.out.println("您选择进行除法运算且n是被除数");
                                 System.out.println("运算结果为" + (n / m));
+                                break;
                             default:
                                 System.out.println("******计算结束******");
-                        }
+                        }break;
                     case 2:
                         System.out.println("您选择了小数运算");
                         System.out.println("请您输入第一个数据");
@@ -71,25 +72,28 @@ class Calculator {
                             case 1:
                                 System.out.println("您选择进行加法运算");
                                 System.out.println("运算结果为" + (e + r));
+                                break;
                             case 2:
                                 System.out.println("您选择进行减法运算");
                                 System.out.println("运算结果为" + (e - r));
+                                break;
                             case 3:
                                 System.out.println("您选择进行乘法");
                                 System.out.println("运算结果为" + (e * r));
+                                break;
                             case 4:
                                 System.out.println("您选择进行除法运算且第一个数据为被除数");
                                 System.out.println("运算结果为" + (e / r));
+                                break;
                             case 5:
                                 System.out.println("您选择进行除法运算且第二个数据为被除数");
                                 System.out.println("运算结果为" + (r / e));
+                                break;
                             default:
                                 System.out.println("******计算结束******");
                         }
                 }
-            }catch(Exception C){
-                System.out.println(C);
-            }
+
         } catch (Exception k){
             System.out.println("出现异常了"+k);
         }
